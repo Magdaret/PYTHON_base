@@ -19,6 +19,7 @@ print(a)
 
 #Здача №2: Дан список чисел. Найдите максимальный и минимальный элементы в списке,
 # а также их индексы. Без использования встроенных функций max() и min().
+'''
 a = 0
 b = 100000
 list_1 = [13, 25, 36, 44, 53, 65]
@@ -29,3 +30,45 @@ for i in range(len(list_1)):
         b = list_1[i]
 print(f'Максимальное число: {a}')
 print(f'Минимальное число: {b}')
+'''
+'''
+#Задача №3: Напишите функцию, которая разворачивает список
+# (переворачивает его задом наперед) без использования срезов вроде [::-1] или метода .reverse().
+list_1 = [13, 25, 36, 44, 53, 65]
+list_2 = []
+for i in list_1:
+    list_2.insert(0, i)
+print(list_2)
+'''
+'''
+# Задача №4 -- Удаление дубликатов 
+nums = [1, 3, 3, 3, 1, 4]
+new_list = []
+for i in range(len(nums)):
+    if nums[i] not in new_list:
+        new_list.append(nums[i])
+print(new_list)
+'''
+'''
+# Задача №5 среднее арифметическое:
+nums = [1, 2, 2, 3, 1, 4]
+n = 0
+a = 0
+for i in range(len(nums)):
+    n = n + 1
+    a = a + nums[i]
+print(a/n)
+'''
+'''
+# Задача №6 кол-во повторяющихся элементов в списке:
+nums = [1, 3, 3, 3, 1, 4]
+new_list = []
+other_list = []
+for i in range(len(nums)):
+    if nums[i] not in new_list:
+        new_list.append(nums[i])
+    elif nums[i] not in other_list:
+        other_list.append(nums[i])
+print(len(other_list))
+print(other_list)
+'''
