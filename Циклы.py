@@ -34,3 +34,39 @@ while a != 0:
         print("Поехали!")
         break
 '''
+'''
+#Задача №2 данны два числа а и b вывести прямоугольник шириной а, длинной b
+a = int(input("Введите длину: "))
+b = int(input("Введите ширину: "))
+for i in range(a):
+    for j in range(b):
+        print("*", end = "")
+    print()
+
+
+#Задача №3 вывести треугольник высотой n
+n = 4
+a = 0
+for i in range(n):
+    a = a + 1
+    for j in range(a):
+        print("*", end = '')
+    print()
+'''
+'''
+#Задача №4 — числовая лестница:
+n = 4
+a = 1
+for i in range(n):
+    for j in range(1,a+1):
+        print(j, end = '')
+    a = a + 1
+    print()
+'''
+# Задача №5 -- Таблица умножения
+c = 10
+for i in range(1,c+1):
+    for j in range(1,c+1):
+        N = i*j
+        print(N, '', end = '')
+    print()
